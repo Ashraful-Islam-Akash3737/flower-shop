@@ -9,56 +9,70 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="px-5">
     <header class="">
         <h1 class="text-5xl font-bold text-center my-5"> Welcome to the <span class="text-green-500">FLOWER</span> shop
             !!!</h1>
     </header>
-    <main class="">
-        <div class="">
+    <main class="mx-auto flex flex-col lg:flex-row">
+        <!-- flower section -->
+        <div class=" flex flex-col justify-center items-center  lg:flex-row gap-5">
             <!-- image card 1 -->
-            <div class="card w-96 bg-base-100 shadow-2xl ">
+            <div class="card w-auto bg-base-100 shadow-2xl border">
                 <figure class="px-10 pt-10 ">
                     <img src="image/pngwing 6.png" alt="Shoes" class="rounded-xl h-40" />
                 </figure>
                 <div class="card-body  text-start">
-                    <h2 class="card-title text-3xl font-semibold">Blue Flower</h2>
+                    <h2 class="card-title text-3xl font-semibold">Snow White</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, sequi.</p>
-                    <h3 class="text-2xl font-medium">Price: <span id="">30</span> $</h3>
+                    <h3 class="text-2xl font-medium">Price: <span id="flower-price1" class="text-gray-400">50</span> $</h3>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Add to Cart</button>
+                        <button id="flower-button1" class="btn btn-primary">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <!-- image card 2 -->
-            <div class="card w-96 bg-base-100 shadow-2xl ">
+            <div class="card w-auto bg-base-100 shadow-2xl ">
                 <figure class="px-10 pt-10 ">
                     <img src="image/pngwing 7.png" alt="Shoes" class="rounded-xl h-40" />
                 </figure>
                 <div class="card-body  text-start">
-                    <h2 class="card-title text-3xl font-semibold">Blue Flower</h2>
+                    <h2 class="card-title text-3xl font-semibold">Blue White</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, sequi.</p>
-                    <h3 class="text-2xl font-medium">Price: <span id="">30</span> $</h3>
+                    <h3 class="text-2xl font-medium">Price: <span id="flower-price2" class="text-gray-400">30</span> $</h3>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Add to Cart</button>
+                        <button id="flower-button2" class="btn btn-primary">Add to Cart</button>
                     </div>
                 </div>
             </div>
             <!-- image card 3 -->
-            <div class="card w-96 bg-base-100 shadow-2xl ">
+            <div class="card w-auto bg-base-100 shadow-2xl ">
                 <figure class="px-10 pt-10 ">
                     <img src="image/pngwing 10.png" alt="Shoes" class="rounded-xl h-40" />
                 </figure>
                 <div class="card-body  text-start">
-                    <h2 class="card-title text-3xl font-semibold">Blue Flower</h2>
+                    <h2 class="card-title text-3xl font-semibold">Black White</h2>
                     <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, sequi.</p>
-                    <h3 class="text-2xl font-medium">Price: <span id="">30</span> $</h3>
+                    <h3 class="text-2xl font-medium">Price: <span id="flower-price3" class="text-gray-400">70</span> $</h3>
                     <div class="card-actions">
-                        <button class="btn btn-primary">Add to Cart</button>
+                        <button id="flower-button3" class="btn btn-primary">Add to Cart</button>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- calculate section -->
+
+        <div class="space-y-3 p-5 border rounded-lg flex justify-start   flex-col ">
+            <div class="" id="flower-list-container">
+                <h2 class="text-3xl font-semibold mt-5">Your Purchase List:</h2>
+
+            </div>
+            <p class="text-2xl font-medium">Total: <span id="total">0</span> $</p>
+            <p class="text-2xl font-medium">Discount: <span id="discount">0</span> $</p>
+            <hr>
+            <p class="text-2xl font-medium">Grand-Total: <span id="Grand-Total">0</span> $</p>
+        </div>
+
     </main>
 
 
