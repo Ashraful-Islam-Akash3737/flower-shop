@@ -1,5 +1,5 @@
 // button 1
-document.getElementById('flower-button1').addEventListener('click', function(){
+document.getElementById('flower-button1').addEventListener('click', function () {
     const total = getInputId('total');
     const flowerPrice1 = getInputId('flower-price1');
 
@@ -8,10 +8,14 @@ document.getElementById('flower-button1').addEventListener('click', function(){
 
     showElement('flower-list-container', "Snow White");
 
-    
-})
+    const discount = getInputId('discount');
+    const discountIs = (total1 * (discount/100));
+    const grandTotalIs = total1 - discountIs;
+    setElement('Grand-Total', grandTotalIs);
+
+})   
 // button 2
-document.getElementById('flower-button2').addEventListener('click', function(){
+document.getElementById('flower-button2').addEventListener('click', function () {
     const total = getInputId('total');
     const flowerPrice2 = getInputId('flower-price2');
 
@@ -20,7 +24,13 @@ document.getElementById('flower-button2').addEventListener('click', function(){
 
     showElement('flower-list-container', "Blue White");
 
+    const discount = getInputId('discount');
+    const discountIs = (total2 * (discount/100));
+    const grandTotalIs = total2 - discountIs;
+    setElement('Grand-Total', grandTotalIs);
     
+
+
 })
 // button 3
 document.getElementById('flower-button3').addEventListener('click', function(){
@@ -32,5 +42,8 @@ document.getElementById('flower-button3').addEventListener('click', function(){
 
     showElement('flower-list-container', "Black White");
 
-    
+    const discount = getInputId('discount');
+    const discountIs = (total3 * (discount/100));
+    const grandTotalIs = total3 - discountIs;
+    setElement('Grand-Total', grandTotalIs);
 })
